@@ -1,5 +1,5 @@
 body {
-    background-color: orangered;
+    background-color: rgb(38, 35, 33);
     margin: 0;
     font-family: rubik;
     color: white;
@@ -40,7 +40,7 @@ body {
     padding:10px;
   }
   .info{
-    background-color: rgb(15, 83, 23);
+    background-color: rgb(94, 110, 96);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-bottom: 10px;
@@ -49,6 +49,9 @@ body {
     margin-left: 35%;
     margin-top: 0;
     font-family: sans-serif;
+  }
+  .name:first-letter{
+    text-transform: uppercase;
   }
   .type{
     margin-left: 10%;
@@ -80,3 +83,24 @@ body {
       transform: translateY(-0px);
     }
   }
+
+.type-normal {
+    background-color: #A8A77A; /* Color para tipo Normal */
+}
+
+.type-fire {
+    background-color: #EE8130; /* Color para tipo Fuego */
+}
+
+.type-water {
+    background-color: #6390F0; /* Color para tipo Agua */
+}
+.type-bug{
+    background-color:rgb(90, 62, 20)
+}
+.type-poison{
+    background-color: purple;
+}
+.type-electric{
+    background-color: yellow;
+}

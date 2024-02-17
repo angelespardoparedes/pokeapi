@@ -16,17 +16,17 @@ async function fetchPokemons() {
 
         renderPokemon(pokemonInfo);
     }
-
-        
-      
-    }
-
+}
 
 fetchPokemons();
 
 function renderPokemon(pokemon) {
     const pokemonElement = document.createElement('div');
     pokemonElement.classList.add('pokemon');
+
+    // Eliminar espacios en blanco y convertir a minúsculas antes de agregar la clase del tipo pokemon, esto lo hago para poder poner color segun el tipo de pokemon
+    const typeClass = pokemon.type.toLowerCase().replace(' ', '');
+    pokemonElement.classList.add(`type-${typeClass}`);
 
     const pokemonInnerHTML = `
         <img src="${pokemon.image}" alt="${pokemon.name}">
